@@ -2,6 +2,9 @@ on init
     insmod /system/lib/modules/ecryptfs.ko
     insmod /system/lib/modules/texfat.ko
 
+    wait /dev/block/platform/msm_sdcc.1
+    symlink /dev/block/platform/msm_sdcc.1 /dev/block/bootdevice
+
 on boot
     start choice_fn
     start chargeled
