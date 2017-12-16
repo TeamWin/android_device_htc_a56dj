@@ -43,6 +43,7 @@ BOARD_USES_MMCUTILS := true
 TW_THEME := portrait_hdpi
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 TW_EXCLUDE_DEFAULT_USB_INIT := true
+TW_NO_REBOOT_RECOVERY := true
 TW_INCLUDE_CRYPTO := true
 TW_CRYPTO_USE_SYSTEM_VOLD := qseecomd
 TW_NO_EXFAT_FUSE := true
